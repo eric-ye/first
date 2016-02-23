@@ -1,4 +1,25 @@
-<h3>Home Page</h3>
-<p>Welcome to <%= @owner.name %>'s page</p>
-<p>Since my birthday is <%= @owner.birthdate %></p>
-<p>I can watch R-rated movies. <%= @owner.countdown %> days until the next birthday!</p>
+<div class="row">
+	<div class="large-6 columns">
+		<div class="text-left">
+			<h3>Home Page</h3>
+			<p> </p>
+			<p>Welcome to the movie page</p>
+			<p>Add your movie to our list!</p>
+		</div>
+	</div>
+	
+
+
+	<div class="large-3 columns">
+		<p> </p>
+		<p> </p>
+		<ul><%= link_to "View movies", "movies#index", class: 'button radius' %></ul>
+	</div>
+	<div class="large-3 columns">
+		<p> </p>
+		<p> </p>
+		<ul><%= link_to "Add a movie", new_movie_path, class: 'button radius' %></ul>
+		
+	</div>
+	
+</div>
